@@ -1,14 +1,16 @@
-numList=input().split()
+numList=list(map(int,input().split()))
 
-def swap(a,b):
-  a,b=b,a
 
 for tmp in range(len(numList)):
   key=tmp+1
+  if key==len(numList):
+    break
   for tmp2 in range(key-1,0,-1):
-    if key<numList[tmp2]:
-      swap(key,numList[tmp])
+    print(numList[key],numList[tmp2])
+    if numList[key]<numList[tmp2]:
+      numList[key],numList[tmp2]=numList[tmp2],numList[key]
       break
-    elif numList[tmp2]<numList[tmp2-1]:
-      swap(numList[tmp2],numList[tmp2-1])
-  print(numList)
+    elif numList[tmp2]>numList[tmp2-1]:
+      numList[tmp2-1],numList[tmp2]=numList[tmp2],numList[tmp2-1]
+    print(numList)
+  
