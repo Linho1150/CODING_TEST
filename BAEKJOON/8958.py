@@ -13,7 +13,6 @@ for tmp in range(num):
       total=total+cnt
     else:
       cnt=0
-    print(str(cnt)+'+',end='')
   print(total)
 
 
