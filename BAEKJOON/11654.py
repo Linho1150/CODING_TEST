@@ -1,2 +1,2 @@
 inputTxt=input()
-print(int(inputTxt))
+print(ord(inputTxt))
