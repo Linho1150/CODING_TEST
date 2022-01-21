@@ -1,0 +1,8 @@
+inputTxt=int(input())
+print("500",str(inputTxt//500))
+inputTxt=inputTxt-((inputTxt//500)*500)
+print("100",str(inputTxt//100))
+inputTxt=inputTxt-((inputTxt//100)*100)
+print("50",str(inputTxt//50))
+inputTxt=inputTxt-((inputTxt//50)*50)
+print("10",str(inputTxt//10))
